@@ -1,0 +1,610 @@
+*PPD-Adobe: "4.3"
+*%
+*% Create By Panasonic PPD tools, 2011/05/24 19:43:38 (GMT)
+*%
+*FormatVersion: "4.3"
+*FileVersion: "2.0.4"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "L_Panasonic-MB1500-gdi.ppd"
+*Manufacturer: "Panasonic"
+*Product: "(KX-MB1500series)"
+*ModelName: "Panasonic KX-MB1500series"
+*ShortNickName: "Panasonic KX-MB1500series"
+*NickName: "Panasonic KX-MB1500 GDI Haikiri"
+*PSVersion: "(3010.000) 550"
+*PSVersion: "(3010.000) 651"
+*PSVersion: "(3010.000) 652"
+*PSVersion: "(3010.000) 653"
+*PSVersion: "(3010.000) 704"
+*PSVersion: "(3010.000) 705"
+*PSVersion: "(3010.000) 800"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "18"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.2
+*cupsManualCopies: False
+*cupsLanguages: "en fr es de it pt pt_PT pl ru cs zh_CN zh_TW"
+
+*cupsFilter: "application/vnd.cups-raster 0 /Library/Printers/Panasonic/Filter/panasonic-kx-mb1500-gdi"
+
+*PanasonicAttr Utility: PanUtility
+*PanasonicAttr SPCFILE: L_KAJD.SPC
+*PanasonicAttr LIBJBIG: L_H0JDJCZAZ
+*PanasonicAttr PMODELNAME: MB1500
+
+*VariablePaperSize: False
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/Letter 8.50 x 11.00 in: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice %% ID=1"
+*PageSize Legal/Legal 8.50 x 14.00 in: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice %% ID=5"
+*PageSize A4/A4 210.0 x 297.0 mm: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice %% ID=9"
+*PageSize B5/B5 (JIS) 182.0 x 257.0 mm: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice %% ID=13"
+*PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice %% ID=258"
+*PageSize 16K/16K 195.0 x 270.0 mm: "<</PageSize[553 765]/ImagingBBox null>>setpagedevice %% ID=263"
+*PageSize 85x13/216x330 216.0 x 330.0 mm: "<</PageSize[612 936]/ImagingBBox null>>setpagedevice %% ID=14"
+*PageSize 85x134/216x340 216.0 x 340.0 mm: "<</PageSize[612 964]/ImagingBBox null>>setpagedevice %% ID=271"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/Letter 8.50 x 11.00 in: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice %% ID=1"
+*PageRegion Legal/Legal 8.50 x 14.00 in: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice %% ID=5"
+*PageRegion A4/A4 210.0 x 297.0 mm: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice %% ID=9"
+*PageRegion B5/B5 (JIS) 182.0 x 257.0 mm: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice %% ID=13"
+*PageRegion ISOB5/B5 (ISO) 176.0 x 250.0 mm: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice %% ID=258"
+*PageRegion 16K/16K 195.0 x 270.0 mm: "<</PageSize[553 765]/ImagingBBox null>>setpagedevice %% ID=263"
+*PageRegion 85x13/216x330 216.0 x 330.0 mm: "<</PageSize[612 936]/ImagingBBox null>>setpagedevice %% ID=14"
+*PageRegion 85x134/216x340 216.0 x 340.0 mm: "<</PageSize[612 964]/ImagingBBox null>>setpagedevice %% ID=271"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea Letter/Letter 8.50 x 11.00 in: "12 12 600 780"
+*ImageableArea Legal/Legal 8.50 x 14.00 in: "12 12 600 996"
+*ImageableArea A4/A4 210.0 x 297.0 mm: "12 12 583 830"
+*ImageableArea B5/B5 (JIS) 182.0 x 257.0 mm: "12 12 504 717"
+*ImageableArea ISOB5/B5 (ISO) 176.0 x 250.0 mm: "12 12 487 697"
+*ImageableArea 16K/16K 195.0 x 270.0 mm: "12 12 541 753"
+*ImageableArea 85x13/216x330 216.0 x 330.0 mm: "12 12 600 924"
+*ImageableArea 85x134/216x340 216.0 x 340.0 mm: "12 12 600 952"
+
+*DefaultPaperDimension: A4
+*PaperDimension Letter/Letter 8.50 x 11.00 in: "612 792"
+*PaperDimension Legal/Legal 8.50 x 14.00 in: "612 1008"
+*PaperDimension A4/A4 210.0 x 297.0 mm: "595 842"
+*PaperDimension B5/B5 (JIS) 182.0 x 257.0 mm: "516 729"
+*PaperDimension ISOB5/B5 (ISO) 176.0 x 250.0 mm: "499 709"
+*PaperDimension 16K/16K 195.0 x 270.0 mm: "553 765"
+*PaperDimension 85x13/216x330 216.0 x 330.0 mm: "612 936"
+*PaperDimension 85x134/216x340 216.0 x 340.0 mm: "612 964"
+
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 50 AnySetup *InputSlot
+*DefaultInputSlot: Tray1
+*InputSlot Tray1/Input Tray (#1): "%% ID=1"
+*InputSlot Manual/Manual Tray (#2): "%% ID=4"
+*CloseUI: *InputSlot
+
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 60 AnySetup *MediaType
+*DefaultMediaType: Plain
+*MediaType Plain/Plain Paper: "%% ID=1"
+*MediaType ThinPaper/Thin Paper: "%% ID=262"
+*MediaType ThickPaper/Thick Paper: "%% ID=257"
+*MediaType Labels/Label: "%% ID=258"
+*CloseUI: *MediaType
+
+*OpenUI *Poster/Poster: PickOne
+*OrderDependency: 180 AnySetup *Poster
+*DefaultPoster: None
+*Poster None/None: "%% ID=0"
+*Poster 1x2/1x2: "%% ID=1"
+*Poster 2x2/2x2: "%% ID=2"
+*Poster 3x3/3x3: "%% ID=3"
+*Poster 4x4/4x4: "%% ID=4"
+*CloseUI: *Poster
+
+*CloseGroup: General
+
+*OpenGroup: Output/Output
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 200 AnySetup *Collate
+*DefaultCollate: True
+*Collate True/True: "%%"
+*Collate False/False: "%%"
+*CloseUI: *Collate
+
+*CloseGroup: Output
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 430 AnySetup *Resolution
+*DefaultResolution: 600dpi
+*Resolution 300dpi/300 dpi: "<</HWResolution[300 300]>>setpagedevice %% ID=1"
+*Resolution 600dpi/600 dpi: "<</HWResolution[600 600]>>setpagedevice %% ID=2"
+*CloseUI: *Resolution
+
+*OpenUI *TonerSave/Toner Save: Boolean
+*OrderDependency: 440 AnySetup *TonerSave
+*DefaultTonerSave: False
+*TonerSave True/True: "%% ID=1"
+*TonerSave False/False: "%% ID=0"
+*CloseUI: *TonerSave
+
+*%%OpenUI *TextAsBlack/Print All Text As Black: Boolean
+*%%OrderDependency: 450 AnySetup *TextAsBlack
+*%%DefaultTextAsBlack: False
+*%%TextAsBlack True/True: "%%"
+*%%TextAsBlack False/False: "%%"
+*%%CloseUI: *TextAsBlack
+
+*CloseGroup: Quality
+
+
+*% Spanish
+*es.Translation General/Básico: ""
+*es.Translation PageSize/Tamaño de papel: ""
+*es.PageSize Letter/Carta 8.50 x 11.00 pda.: ""
+*es.PageSize Legal/Legal 8.50 x 14.00 pda.: ""
+*es.PageSize A4/A4 210.0 x 297.0 mm: ""
+*es.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*es.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*es.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*es.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*es.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*es.Translation InputSlot/Origen del papel : ""
+*es.InputSlot Tray1/Introduzca bandeja (#1): ""
+*es.InputSlot Manual/Bandeja manual (#2): ""
+*es.Translation MediaType/Tipo de soporte : ""
+*es.MediaType Plain/Papel normal: ""
+*es.MediaType ThinPaper/Papel delgado: ""
+*es.MediaType Labels/Etiqueta: ""
+*es.MediaType ThickPaper/Papel grueso: ""
+*es.Translation Poster/Póster: ""
+*es.Poster None/Ninguno: ""
+*es.Poster 1x2/1 x 2: ""
+*es.Poster 2x2/2 x 2: ""
+*es.Poster 3x3/3 x 3: ""
+*es.Poster 4x4/4 x 4: ""
+*es.Translation Output/Salida: ""
+*es.Translation Collate/Intercalar: ""
+*es.Collate True/sí: ""
+*es.Collate False/N: ""
+*es.Translation Quality/Calidad: ""
+*es.Translation Resolution/Calidad de impresión: ""
+*es.Resolution Draft/Borrador: ""
+*es.Resolution Standard/Estándar: ""
+*es.Translation TonerSave/Ahorro de tóner: ""
+*es.TonerSave True/sí: ""
+*es.TonerSave False/N: ""
+
+
+*% French
+*fr.Translation General/Général: ""
+*fr.Translation PageSize/Format de papier : ""
+*fr.PageSize Letter/Lettre 8.50 x 11.00 po: ""
+*fr.PageSize Legal/Légal 8.50 x 14.00 po: ""
+*fr.PageSize A4/A4 210.0 x 297.0 mm: ""
+*fr.PageSize 85x13/8.5x13 8.50 x 13.00 po: ""
+*fr.PageSize 85x134/8.5x13.4 8.50 x 13.40 po: ""
+*fr.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*fr.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*fr.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*fr.Translation InputSlot/Source de papier : ""
+*fr.InputSlot Tray1/Entrez le bac (#1): ""
+*fr.InputSlot Manual/Bac manuel (#2): ""
+*fr.Translation MediaType/Type de papier : ""
+*fr.MediaType Plain/Papier ordinaire: ""
+*fr.MediaType ThinPaper/Papier mince: ""
+*fr.MediaType Labels/Étiquette: ""
+*fr.MediaType ThickPaper/Papier épais: ""
+*fr.Translation Poster/Affiche : ""
+*fr.Poster None/Aucun: ""
+*fr.Poster 1x2/1 x 2: ""
+*fr.Poster 2x2/2 x 2: ""
+*fr.Poster 3x3/3 x 3: ""
+*fr.Poster 4x4/4 x 4: ""
+*fr.Translation Output/Sortie: ""
+*fr.Translation Collate/Assembler: ""
+*fr.Collate True/Oui: ""
+*fr.Collate False/N: ""
+*fr.Translation Quality/Qualité : ""
+*fr.Translation Resolution/Qualité d’impression : ""
+*fr.Resolution Draft/Brouillon: ""
+*fr.Resolution Standard/Standard: ""
+*fr.Translation TonerSave/Économie toner : ""
+*fr.TonerSave True/Oui: ""
+*fr.TonerSave False/N: ""
+
+*%=====de it pt pl ru cs zh_CN zh_TW====================================
+
+
+*% German
+*de.Translation General/General: ""
+*de.Translation PageSize/Papierformat : ""
+*de.PageSize Letter/Letter 8.50 x 11.00 Zoll: ""
+*de.PageSize Legal/Legal 8.50 x 14.00 Zoll: ""
+*de.PageSize A4/A4 210.0 x 297.0 mm: ""
+*de.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*de.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*de.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*de.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*de.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*de.Translation InputSlot/Papierzufuhr : ""
+*de.InputSlot Tray1/Eingabefach (#1): ""
+*de.InputSlot Manual/Manuelles Fach (#2): ""
+*de.Translation MediaType/Medientyp : ""
+*de.MediaType Plain/Normalpapier: ""
+*de.MediaType ThinPaper/Dünnes Papier: ""
+*de.MediaType Labels/Etiketten: ""
+*de.MediaType ThickPaper/Dickes Papier: ""
+*de.Translation Poster/Poster : ""
+*de.Poster None/Keine: ""
+*de.Poster 1x2/1 x 2: ""
+*de.Poster 2x2/2 x 2: ""
+*de.Poster 3x3/3 x 3: ""
+*de.Poster 4x4/4 x 4: ""
+*de.Translation Output/Ausgabe: ""
+*de.Translation Collate/Sortieren: ""
+*de.Collate True/Ein: ""
+*de.Collate False/Aus: ""
+*de.Translation Quality/Qualität: ""
+*de.Translation Resolution/Auflösung : ""
+*de.Resolution Draft/Entwurf: ""
+*de.Resolution Standard/Standard: ""
+*de.Translation TonerSave/Tonersparmodus: ""
+*de.TonerSave True/Ein: ""
+*de.TonerSave False/Aus: ""
+
+*% Italy
+*it.Translation General/Generale: ""
+*it.Translation PageSize/Formato carta : ""
+*it.PageSize Letter/Lettera 8.50 x 11.00 ": ""
+*it.PageSize Legal/Legale 8.50 x 14.00 ": ""
+*it.PageSize A4/A4 210.0 x 297.0 mm: ""
+*it.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*it.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*it.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*it.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*it.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*it.Translation InputSlot/Alimentazione : ""
+*it.InputSlot Tray1/Inserire Cassetto (#1): ""
+*it.InputSlot Manual/Cassetto manuale (#2): ""
+*it.Translation MediaType/Tipo di supporto : ""
+*it.MediaType Plain/Carta comune: ""
+*it.MediaType ThinPaper/Carta sottile: ""
+*it.MediaType Labels/Etichette: ""
+*it.MediaType ThickPaper/Carta spessa: ""
+*it.Translation Poster/Poster: ""
+*it.Poster None/Nessuno: ""
+*it.Poster 1x2/1 x 2: ""
+*it.Poster 2x2/2 x 2: ""
+*it.Poster 3x3/3 x 3: ""
+*it.Poster 4x4/4 x 4: ""
+*it.Translation Output/Output: ""
+*it.Translation Collate/Fascicola: ""
+*it.Collate True/On: ""
+*it.Collate False/Off: ""
+*it.Translation Quality/Qualità: ""
+*it.Translation Resolution/Risoluzione: ""
+*it.Resolution Draft/BOZZA: ""
+*it.Resolution Standard/Standard: ""
+*it.Translation TonerSave/Risparmio toner: ""
+*it.TonerSave True/On: ""
+*it.TonerSave False/Off: ""
+
+*% Potgues(Brazilian)
+*pt.Translation General/General: ""
+*pt.Translation PageSize/Tamanho do papel  : ""
+*pt.PageSize Letter/Carta 8.50 x 11.00 pol.: ""
+*pt.PageSize Legal/Ofício 8.50 x 14.00 pol.: ""
+*pt.PageSize A4/A4 210.0 x 297.0 mm: ""
+*pt.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*pt.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*pt.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*pt.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*pt.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*pt.Translation InputSlot/Origem do papel : ""
+*pt.InputSlot Tray1/Bandeja de entrada (#1): ""
+*pt.InputSlot Manual/Bandeja manual (#2): ""
+*pt.Translation MediaType/Tipo de mídia : ""
+*pt.MediaType Plain/Papel Comum: ""
+*pt.MediaType ThinPaper/Papel Fino: ""
+*pt.MediaType Labels/Etiqueta: ""
+*pt.MediaType ThickPaper/Papel Grosso: ""
+*pt.Translation Poster/Pôster: ""
+*pt.Poster None/Nenhum: ""
+*pt.Poster 1x2/1 x 2: ""
+*pt.Poster 2x2/2 x 2: ""
+*pt.Poster 3x3/3 x 3: ""
+*pt.Poster 4x4/4 x 4: ""
+*pt.Translation Output/Saída: ""
+*pt.Translation Collate/Agrupar: ""
+*pt.Collate True/Ligado: ""
+*pt.Collate False/Desligado: ""
+*pt.Translation Quality/Qualidade: ""
+*pt.Translation Resolution/Resolução: ""
+*pt.Resolution Draft/Rascunho: ""
+*pt.Resolution Standard/Padrão: ""
+*pt.Translation TonerSave/Economizar Toner: ""
+*pt.TonerSave True/Ligado: ""
+*pt.TonerSave False/Desligado: ""
+
+*% Portgues(Portgues)
+*pt_PT.Translation General/General: ""
+*pt_PT.Translation PageSize/Tamanho de Papel  : ""
+*pt_PT.PageSize Letter/Carta 8.50 x 11.00 pol.: ""
+*pt_PT.PageSize Legal/Ofício 8.50 x 14.00 pol.: ""
+*pt_PT.PageSize A4/A4 210.0 x 297.0 mm: ""
+*pt_PT.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*pt_PT.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*pt_PT.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*pt_PT.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*pt_PT.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*pt_PT.Translation InputSlot/Fonte do Papel : ""
+*pt_PT.InputSlot Tray1/Bandeja de entrada (#1): ""
+*pt_PT.InputSlot Manual/Bandeja manual (#2): ""
+*pt_PT.Translation MediaType/Tipo de Mídia : ""
+*pt_PT.MediaType Plain/Papel Comum: ""
+*pt_PT.MediaType ThinPaper/Papel Fino: ""
+*pt_PT.MediaType Labels/Etiqueta: ""
+*pt_PT.MediaType ThickPaper/Papel Grosso: ""
+*pt_PT.Translation Poster/Cartaz: ""
+*pt_PT.Poster None/Nenhum: ""
+*pt_PT.Poster 1x2/1 x 2: ""
+*pt_PT.Poster 2x2/2 x 2: ""
+*pt_PT.Poster 3x3/3 x 3: ""
+*pt_PT.Poster 4x4/4 x 4: ""
+*pt_PT.Translation Output/Saída: ""
+*pt_PT.Translation Collate/Cópias: ""
+*pt_PT.Collate True/Ligado: ""
+*pt_PT.Collate False/Desligado: ""
+*pt_PT.Translation Quality/Qualidade: ""
+*pt_PT.Translation Resolution/Resolução: ""
+*pt_PT.Resolution Draft/Rascunho: ""
+*pt_PT.Resolution Standard/Padrão: ""
+*pt_PT.Translation TonerSave/Economizar o Toner: ""
+*pt_PT.TonerSave True/Ligado: ""
+*pt_PT.TonerSave False/Desligado: ""
+
+*% Polish
+*pl.Translation General/Ogólny: ""
+*pl.Translation PageSize/Rozmiar Papieru : ""
+*pl.PageSize Letter/Letter 8.50 x 11.00 cale: ""
+*pl.PageSize Legal/Legal 8.50 x 14.00 cale: ""
+*pl.PageSize A4/A4 210.0 x 297.0 mm: ""
+*pl.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*pl.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*pl.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*pl.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*pl.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*pl.Translation InputSlot/Źródło papieru : ""
+*pl.InputSlot Tray1/Podajnik (#1): ""
+*pl.InputSlot Manual/Taca ręczna (#2): ""
+*pl.Translation MediaType/Rodzaj nośnika : ""
+*pl.MediaType Plain/Papier zwykły: ""
+*pl.MediaType ThinPaper/Cienki papier: ""
+*pl.MediaType Labels/Etykiety: ""
+*pl.MediaType ThickPaper/Gruby papier: ""
+*pl.Translation Poster/Plakat: ""
+*pl.Poster None/Brak: ""
+*pl.Poster 1x2/1 x 2: ""
+*pl.Poster 2x2/2 x 2: ""
+*pl.Poster 3x3/3 x 3: ""
+*pl.Poster 4x4/4 x 4: ""
+*pl.Translation Output/: ""
+*pl.Translation Collate/: ""
+*pl.Collate True/Włącz: ""
+*pl.Collate False/Wyłącz: ""
+*pl.Translation Quality/Jakość: ""
+*pl.Translation Resolution/Rozdzielczość: ""
+*pl.Resolution Draft/Zarys: ""
+*pl.Resolution Standard/Standardowe: ""
+*pl.Translation TonerSave/Funkcja oszczędzania tonera: ""
+*pl.TonerSave True/Włącz: ""
+*pl.TonerSave False/Wyłącz: ""
+
+*% Russia
+*ru.Translation General/Основные: ""
+*ru.Translation PageSize/Формат бумаги : ""
+*ru.PageSize Letter/Letter 8.50 x 11.00 дюйм: ""
+*ru.PageSize Legal/Legal 8.50 x 14.00 дюйм: ""
+*ru.PageSize A4/A4 210.0 x 297.0 мм: ""
+*ru.PageSize 85x13/216x330 216.0 x 330.0 мм: ""
+*ru.PageSize 85x134/216x340 216.0 x 340.0 мм: ""
+*ru.PageSize 16K/16K 195.0 x 270.0 мм: ""
+*ru.PageSize B5/B5 (JIS) 182.0 x 257.0 мм: ""
+*ru.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 мм: ""
+*ru.Translation InputSlot/Подача бумаги : ""
+*ru.InputSlot Tray1/лоток (#1): ""
+*ru.InputSlot Manual/Ручной лоток (#2): ""
+*ru.Translation MediaType/Тип печатного носителя : ""
+*ru.MediaType Plain/Обычная бумага: ""
+*ru.MediaType ThinPaper/Тонкая бумага: ""
+*ru.MediaType Labels/Этикетка: ""
+*ru.MediaType ThickPaper/Толстая бумага: ""
+*ru.Translation Poster/Плакат: ""
+*ru.Poster None/Нет: ""
+*ru.Poster 1x2/1 x 2: ""
+*ru.Poster 2x2/2 x 2: ""
+*ru.Poster 3x3/3 x 3: ""
+*ru.Poster 4x4/4 x 4: ""
+*ru.Translation Output/Вывод: ""
+*ru.Translation Collate/Разбор по копиям: ""
+*ru.Collate True/Вкл: ""
+*ru.Collate False/Выкл: ""
+*ru.Translation Quality/Качество: ""
+*ru.Translation Resolution/Разрешение: ""
+*ru.Resolution Draft/Черновик: ""
+*ru.Resolution Standard/Стандартный: ""
+*ru.Translation TonerSave/Экономия тонера: ""
+*ru.TonerSave True/Вкл: ""
+*ru.TonerSave False/Выкл: ""
+
+*% Czech
+*cs.Translation General/Generální: ""
+*cs.Translation PageSize/Velikost papíru: ""
+*cs.PageSize Letter/Letter 8.50 x 11.00 palce: ""
+*cs.PageSize Legal/Legal 8.50 x 14.00 palce: ""
+*cs.PageSize A4/A4 210.0 x 297.0 mm: ""
+*cs.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*cs.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*cs.PageSize 16K/16K 195.0 x 270.0 mm: ""
+*cs.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*cs.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*cs.Translation InputSlot/Zdroj papíru : ""
+*cs.InputSlot Tray1/Vyberte zásobník (#1): ""
+*cs.InputSlot Manual/Ruční zásobník (#2): ""
+*cs.Translation MediaType/Typ média : ""
+*cs.MediaType Plain/Obyčejný papír: ""
+*cs.MediaType ThinPaper/Tenký papír: ""
+*cs.MediaType Labels/Štítky: ""
+*cs.MediaType ThickPaper/Silný papír: ""
+*cs.Translation Poster/Plakát: ""
+*cs.Poster None/Není: ""
+*cs.Poster 1x2/1 x 2: ""
+*cs.Poster 2x2/2 x 2: ""
+*cs.Poster 3x3/3 x 3: ""
+*cs.Poster 4x4/4 x 4: ""
+*cs.Translation Output/Výstup: ""
+*cs.Translation Collate/Skládat: ""
+*cs.Collate True/Zapnuto: ""
+*cs.Collate False/Vypnuto: ""
+*cs.Translation Quality/Kvalita: ""
+*cs.Translation Resolution/Rozlišení: ""
+*cs.Resolution Draft/Koncept: ""
+*cs.Resolution Standard/Standardní: ""
+*cs.Translation TonerSave/Úspora &toneru: ""
+*cs.TonerSave True/Zapnuto: ""
+*cs.TonerSave False/Vypnuto: ""
+
+*% Simple China
+*zh_CN.Translation General/一般: ""
+*zh_CN.Translation PageSize/纸张尺寸 : ""
+*zh_CN.PageSize Letter/Letter 8.50 x 11.00 英寸: ""
+*zh_CN.PageSize Legal/Legal 8.50 x 14.00 英寸: ""
+*zh_CN.PageSize A4/A4 210.0 x 297.0 毫米: ""
+*zh_CN.PageSize 85x13/216x330 216.0 x 330.0 毫米: ""
+*zh_CN.PageSize 85x134/216x340 216.0 x 340.0 毫米: ""
+*zh_CN.PageSize 16K/16开 195.0 x 270.0 毫米: ""
+*zh_CN.PageSize B5/B5 (JIS) 182.0 x 257.0 毫米: ""
+*zh_CN.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 毫米: ""
+*zh_CN.Translation InputSlot/纸张来源 : ""
+*zh_CN.InputSlot Tray1/输入纸盒 (#1): ""
+*zh_CN.InputSlot Manual/手动纸盒 (#2): ""
+*zh_CN.Translation MediaType/纸张类型: ""
+*zh_CN.MediaType Plain/普通纸 : ""
+*zh_CN.MediaType ThinPaper/薄纸: ""
+*zh_CN.MediaType Labels/标签 : ""
+*zh_CN.MediaType ThickPaper/厚纸 : ""
+*zh_CN.Translation Poster/海报 : ""
+*zh_CN.Poster None/无 : ""
+*zh_CN.Poster 1x2/1 x 2: ""
+*zh_CN.Poster 2x2/2 x 2: ""
+*zh_CN.Poster 3x3/3 x 3: ""
+*zh_CN.Poster 4x4/4 x 4: ""
+*zh_CN.Translation Output/输出: ""
+*zh_CN.Translation Collate/逐份打印: ""
+*zh_CN.Collate True/开 : ""
+*zh_CN.Collate False/关: ""
+*zh_CN.Translation Quality/打印质量 : ""
+*zh_CN.Translation Resolution/分辨率: ""
+*zh_CN.Resolution Draft/草稿件 : ""
+*zh_CN.Resolution Standard/标准: ""
+*zh_CN.Translation TonerSave/节省墨粉: ""
+*zh_CN.TonerSave True/开 : ""
+*zh_CN.TonerSave False/关: ""
+
+*% Traditional China
+*zh_TW.Translation General/一般: ""
+*zh_TW.Translation PageSize/紙張尺寸: ""
+*zh_TW.PageSize Letter/Letter 8.50 x 11.00 英吋: ""
+*zh_TW.PageSize Legal/Legal 8.50 x 14.00 英吋: ""
+*zh_TW.PageSize A4/A4 210.0 x 297.0 公厘: ""
+*zh_TW.PageSize 85x13/216x330 216.0 x 330.0 公厘: ""
+*zh_TW.PageSize 85x134/216x340 216.0 x 340.0 公厘: ""
+*zh_TW.PageSize 16K/16K 195.0 x 270.0 公厘: ""
+*zh_TW.PageSize B5/B5 (JIS) 182.0 x 257.0 公厘: ""
+*zh_TW.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 公厘: ""
+*zh_TW.Translation InputSlot/供紙來源 : ""
+*zh_TW.InputSlot Tray1/輸入紙匣 (#1): ""
+*zh_TW.InputSlot Manual/手動紙匣 (#2): ""
+*zh_TW.Translation MediaType/紙張類型 : ""
+*zh_TW.MediaType Plain/普通紙: ""
+*zh_TW.MediaType ThinPaper/薄紙: ""
+*zh_TW.MediaType Labels/標籤 : ""
+*zh_TW.MediaType ThickPaper/厚紙: ""
+*zh_TW.Translation Poster/海報: ""
+*zh_TW.Poster None/無: ""
+*zh_TW.Poster 1x2/1 x 2: ""
+*zh_TW.Poster 2x2/2 x 2: ""
+*zh_TW.Poster 3x3/3 x 3: ""
+*zh_TW.Poster 4x4/4 x 4: ""
+*zh_TW.Translation Output/輸出: ""
+*zh_TW.Translation Collate/逐份列印: ""
+*zh_TW.Collate True/啟用: ""
+*zh_TW.Collate False/停用 : ""
+*zh_TW.Translation Quality/列印品質: ""
+*zh_TW.Translation Resolution/解析度: ""
+*zh_TW.Resolution Draft/草稿件: ""
+*zh_TW.Resolution Standard/標準: ""
+*zh_TW.Translation TonerSave/節省碳粉: ""
+*zh_TW.TonerSave True/啟用: ""
+*zh_TW.TonerSave False/停用 : ""
+
+
+*%=====de it pt pl ru cs zh_CN zh_TW====================================
+
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+*%
+*% End of PPD
+*%
