@@ -2,14 +2,14 @@
   "version": 1,
   "actions": [
     {
-      "name": "Build Filter",
-      "icon": "commandPalette",
-      "command": "./scripts/build-filter.sh"
-    },
-    {
       "name": "Build",
       "icon": "container",
       "command": "scripts/build-pkg.sh"
+    },
+    {
+      "name": "Build Filter",
+      "icon": "commandPalette",
+      "command": "./scripts/build-filter.sh"
     }
   ]
 }
