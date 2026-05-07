@@ -21,7 +21,7 @@
 - `scripts/install-driver.sh` - установка PPD, фильтра, создание CUPS-очереди и best-effort repair scanner backend.
 - `scripts/verify-print.sh` - проверка очереди и отправка тестовой страницы в реальный USB-принтер.
 - `scripts/repair-scanner-ica.sh` - ремонт установленного `Panasonic MFS Scanner.app` для Image Capture.
-- `scripts/build-pkg.sh` - сборка `.pkg`, который ставит PPD, фильтр и helper-скрипты в систему.
+- `scripts/build-pkg.sh` - сборка product `.pkg` (печать, вложенный Panasonic `Install.pkg` из DMG, repair ICA; `productbuild` + экран «Настроить»).
 - `printer/docker/Dockerfile` - build/research окружение, не runtime печати.
 - `artifacts/` - локальные архивы/исходники Panasonic; содержимое не коммитится.
 
@@ -64,7 +64,9 @@ file printer/filter/bin/panasonic-kx-mb1500-gdi
 ./scripts/install-driver.sh
 ```
 
-Команда установит PPD:
+Опционально: `./scripts/install-driver.sh --ppd-only` ставит только PPD и фильтр (без очереди и без repair); сочетание `./scripts/install-driver.sh --without-scanner-repair` отключает repair при создании очереди.
+
+Команда по умолчанию установит PPD:
 
 ```text
 /Library/Printers/PPDs/Contents/Resources/Panasonic_KX-MB1500-haikiri.ppd
@@ -86,7 +88,7 @@ Panasonic_KX_MB1500CX
 
 Скрипт сам найдёт локальный USB URI через `lpinfo -v`; серийник не записывается в файлы проекта.
 
-Дополнительно `install-driver.sh` теперь всегда пытается выполнить `repair-scanner-ica.sh` внутри основного install flow:
+Дополнительно полный запуск `./scripts/install-driver.sh` (без `--ppd-only` и без `--without-scanner-repair`) пытается выполнить `repair-scanner-ica.sh` внутри основного install flow:
 
 - если `Panasonic MFS Scanner.app` уже установлен, install flow попробует сразу починить ICA backend для `Image Capture`;
 - если scanner app ещё не установлен, этот шаг будет просто пропущен;
@@ -173,9 +175,17 @@ dist/Panasonic-KX-MB1500-haikiri-0.1.0.pkg
 sudo installer -pkg dist/Panasonic-KX-MB1500-haikiri-0.1.0.pkg -target /
 ```
 
-Пакет ставит PPD, нативный фильтр и helper-скрипты. Если принтер подключён по USB во время установки, пакет также создаёт CUPS-очередь.
+Компонент **печати** внутри продукта ставит PPD, нативный фильтр и helper-скрипты; если принтер подключён по USB во время установки, создаётся CUPS-очередь (без запуска repair — он вынесен в отдельный компонент).
 
-Scanner repair отдельно из `postinstall` больше не вызывается, потому что этот шаг уже встроен в основной `install-driver.sh` и всегда выполняется там в режиме best-effort.
+Скрипт `./scripts/build-pkg.sh` монтирует `artifacts/Mac_1.15.2.dmg`, копирует `Install.pkg` во внутренний компонент и собирает **product** через `productbuild`: три компонента (`print.pkg`, `mfs.pkg`, `repair.pkg`) и `Distribution.xml` с экраном «Настроить».
+
+В готовом `.pkg` пользователь выбирает компоненты:
+
+- драйвер печати (наш postinstall, без вызова repair);
+- установка Panasonic MFS из вложенного `Install.pkg`;
+- repair ICA (отдельный postinstall с вшитым `repair-scanner-ica.sh`).
+
+При запуске из репозитория `./scripts/install-driver.sh` без флагов по-прежнему выполняет best-effort repair, если установлен `Panasonic MFS Scanner.app`. Флаги: `--ppd-only` (только PPD и фильтр), `--without-scanner-repair` (очередь/полная установка без repair).
 
 ## Архитектуры
 
@@ -210,7 +220,9 @@ Panasonic на этой странице прямо указывает:
 
 ### Полная настройка сканера с нуля
 
-Ниже последовательность, которую можно выполнить с чистой системы, чтобы завести сканирование именно через `Image Capture`.
+Для пользователей проще один продуктовый `.pkg` из релиза (в нём уже есть `Install.pkg` из `Mac_1.15.2.dmg` и компонент repair). Дальше — ручная последовательность, если собираете всё отдельно.
+
+Ниже шаги с чистой системы, чтобы завести сканирование через `Image Capture`.
 
 1. Подключить `Panasonic KX-MB1500*` по USB и включить устройство.
 

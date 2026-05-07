@@ -10,15 +10,29 @@ readonly PPD_INSTALL_PATH="$PPD_INSTALL_DIR/$PPD_NAME"
 readonly FILTER_PATH="/Library/Printers/Panasonic/Filter/panasonic-kx-mb1500-gdi"
 readonly FILTER_SOURCE_PATH="$(cd "$SCRIPT_DIR/.." && pwd)/printer/filter/bin/panasonic-kx-mb1500-gdi"
 readonly REPAIR_SCANNER_SCRIPT_PATH="$SCRIPT_DIR/repair-scanner-ica.sh"
-readonly MODE="${1:-full}"
-
-# Helper держит общую логику распознавания серии MB1500, чтобы install/verify/pkg использовали один и тот же контракт.
-source "$SCRIPT_DIR/helper/panasonic_model.sh"
 
 fail() {
     printf 'ERROR: %s\n' "$1" >&2
     exit 1
 }
+
+# Helper держит общую логику распознавания серии MB1500, чтобы install/verify/pkg использовали один и тот же контракт.
+source "$SCRIPT_DIR/helper/panasonic_model.sh"
+
+DO_PPD_ONLY=0
+SKIP_SCANNER_REPAIR=0
+
+# Поддержка нескольких флагов: ./scripts/install-driver.sh [--ppd-only] [--without-scanner-repair]
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --ppd-only) DO_PPD_ONLY=1 ;;
+        --without-scanner-repair) SKIP_SCANNER_REPAIR=1 ;;
+        *)
+            fail "неизвестный аргумент: $1 (допустимо: --ppd-only, --without-scanner-repair)"
+            ;;
+    esac
+    shift
+done
 
 run_admin() {
     local command="$1"
@@ -117,11 +131,14 @@ main() {
 
     install_ppd
     install_filter
-    repair_scanner_backend_if_possible
 
-    if [ "$MODE" = "--ppd-only" ]; then
+    if [ "$DO_PPD_ONLY" -eq 1 ]; then
         printf 'Installed PPD: %s\nInstalled filter: %s\n' "$PPD_INSTALL_PATH" "$FILTER_PATH"
         return
+    fi
+
+    if [ "$SKIP_SCANNER_REPAIR" -eq 0 ]; then
+        repair_scanner_backend_if_possible
     fi
 
     device_uri="$(find_device_uri)"
